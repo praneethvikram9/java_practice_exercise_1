@@ -1,24 +1,24 @@
+package main.java;
+
 import java.util.Scanner;
 
 public class Second {
 
 
-    public static void main(String args[]){
+    public  String main(int number){
 
-        Scanner reader=new Scanner(System.in);
-        int number=reader.nextInt();
         if(number>20 && number < 30){
             if(number%2==0){
-                System.out.println("Tom");
+                return "Tom";
             }
             else{
 
-                System.out.println("Jerry");
+                return "Jerry";
             }
         }
 
         else{
-            System.out.println("No default action specified");
+               return "None";
         }
 
 

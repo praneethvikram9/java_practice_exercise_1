@@ -1,14 +1,22 @@
+package main.java;
+
 import java.util.Scanner;
 
 public class Third {
 
 
-    public static void main(String args[]){
-        Scanner reader=new Scanner(System.in);
-        String a ="";
-        a=reader.nextLine();
+    public static void main(String args[]) {
+        Scanner reader = new Scanner(System.in);
+        String a = "";
+        a = reader.nextLine();
+        int len = a.length();
+        int i = 0;
+        check_character(a);
+    }
+    public static void check_character(String a){
+
+        int i;
         int len=a.length();
-        int i=0;
         char temp;
         for(i=0;i<len;i++){
             temp=a.charAt(i);
