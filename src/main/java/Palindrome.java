@@ -6,11 +6,8 @@ import java.util.Scanner;
  class Palindrome
 
  {
-     public static void main(String args[])
+     public static String check_palindrome(long number)
      {
-         long number;
-         Scanner reader= new Scanner(System.in);
-         number=reader.nextLong();
          long temp=number;
          long sum=0;
          long t=0;
@@ -25,13 +22,13 @@ import java.util.Scanner;
          }
          if(number==sum) {
              if (sum_even > 25) {
-                 System.out.println(number + "  is a palindrome and sum of even numbers is greater than 25");
+                 return "it  is a palindrome and sum of even numbers is greater than 25";
              } else {
-                 System.out.println(number +" is a palindrome and sum of even numbers is less than 25");
+                 return " it is a palindrome and sum of even numbers is less than 25";
              }
          }
          else{
-             System.out.println(number +"  is not a palindrome");
+             return " it is not a palindrome";
          }
      }
 
